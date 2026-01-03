@@ -25,7 +25,7 @@ public class ContactController {
     @PostMapping("/contact")
     public List<Contact> saveContactInquiryDetails(@RequestBody List<Contact> contacts) {
         List<Contact> savedContacts = new ArrayList<>();
-        Contact contact = contacts.get(0);
+        Contact contact = contacts.getFirst();
         if (null != contact) {
             contact.setContactId(getServiceReqNumber());
             contact.setCreateDt(new Date(System.currentTimeMillis()));

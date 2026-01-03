@@ -212,4 +212,4 @@ DELETE FROM `authorities`;
  INSERT INTO `authorities` (`customer_id`, `name`)
   VALUES (1, 'ROLE_ADMIN');
 
-EazyBytes@54321
+#1234567890 - Password for happy@example.com
